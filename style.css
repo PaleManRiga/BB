@@ -1,0 +1,130 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 1vw;
+  }
+}
+@font-face {
+    font-family: 'Sharp Grotesk SmBold 20';
+    src: url('SharpGroteskSmBold20-Regular.woff2') format('woff2'),
+        url('SharpGroteskSmBold20-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Regular.woff2') format('woff2'),
+        url('ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Bold.woff2') format('woff2'),
+        url('ProductSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  /* height: 100vh; */
+  height: 62.5rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  padding-top: 5.0694rem;
+  font-family: "Sharp Grotesk SmBold 20";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.8611rem;
+  margin: 0;
+  margin-bottom: 2.7778rem;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+}
+
+h4 {
+  margin: 0;
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1528rem;
+  line-height: 132%;
+  margin-bottom: 3.3333rem;
+  /* identical to box height, or 41px */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+}
+.logos {
+  display: flex;
+  gap: 5.1389rem;
+}
+.image {
+  position: absolute;
+  bottom: -27rem;
+  z-index: -1;
+  transform: rotate(30deg) translate(0.8333rem, 9.9306rem);
+}
+.button {
+  margin-top: 4.1667rem;
+  text-decoration: none;
+  padding: 1.3889rem 4.1667rem;
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3194rem;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  background-color: #fff;
+  background: #4128da;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+@media(max-width: 768px) {
+    h1 {
+        font-size: 42px;
+        margin-bottom: 37px;
+    }
+    h4 {
+        font-size: 21px;
+        margin-bottom: 45px;
+    }
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .logos svg {
+        max-width: 115px;
+        flex-basis: 50%;
+    }
+    .button {
+        font-size:  18px;
+        margin-top: 50px;
+    }
+    .image {
+        position: initial;
+        width: 450px;
+        height: 450px;
+        transform: rotate(16deg);
+    }
+}
